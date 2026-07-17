@@ -10,4 +10,14 @@ git add .
 git commit -m "feat: 添加 SymPO 算法"
 
 # 2. 推送到远程（关键！）
-git push origin new_althorithm/sympo
+git add .
+
+
+# 切换到 main
+git checkout main
+
+# 合并
+git merge new_althorithm/sympo
+
+# 推送
+git push origin main

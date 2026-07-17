@@ -409,6 +409,15 @@ swift rlhf \
     ...
 ```
 
+### 模型合并
+在使用LoRA等微调方法训练完成后，如果需要进行推理，需要先将LoRA adapter与基础模型合并。请先下载原模型，然后运行以下合并脚本：
+
+```shell
+bash run_inference_merge.sh
+```
+
+该脚本会将训练好的LoRA adapter与基础模型合并，生成完整的模型文件，合并后的模型即可用于推理。
+
 ### 推理
 ```shell
 CUDA_VISIBLE_DEVICES=0 swift infer \

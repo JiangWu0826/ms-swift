@@ -423,6 +423,15 @@ swift rlhf \
 ```
 
 
+### Model Merge
+After training with LoRA or other fine-tuning methods, you need to merge the LoRA adapter with the base model before inference. Please first download the original model, then run the following merge script:
+
+```shell
+bash run_inference_merge.sh
+```
+
+This script will merge the trained LoRA adapter with the base model to generate a complete model file, which can then be used for inference.
+
 ### Inference
 ```shell
 CUDA_VISIBLE_DEVICES=0 swift infer \

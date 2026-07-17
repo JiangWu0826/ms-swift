@@ -153,3 +153,10 @@ megatron_output/
 
 # ast template
 ast_index_file.py
+
+# Model checkpoints
+Qwen3_2b/
+Qwen-2b/
+Qwen-8b/
+*_hf/
+*_mcore/
